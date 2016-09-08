@@ -1,0 +1,12 @@
+id,sku,name,qty,is_stock
+1,HR-1000,Filter,10,1
+2,HR-1001,Фильтр,2,1
+3,HR-1002,Shirt,5,0
+4,HR-1003,Baloon,0,0
+5,HR-1004,"Mask 1",2,0
+6,HR-1005,"Mask 2",0,0
+7,HR-1006,"Ski pass",10,1
+8,HR-1007,Колесо,0,0
+9,HR-1008,NULL,1,1
+10,HR-1009,Pen,25,1
+11,HR-1009a,Pencil,2,0

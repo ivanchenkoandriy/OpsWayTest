@@ -9,11 +9,16 @@ class Csv implements WriterInterface
     protected $file;
     protected $filename;
 
-    public function __construct()
+    public function __construct($params)
     {
+        if(isset($params['filename'])){
+            $this->filename = $params['filename'];
+        } else {
+            throw new \InvalidArgumentException('Please set filename for csv in config file');
+        }
         $this->checkFileName();
     }
-
+   
     /**
      * @param $item array
      *
