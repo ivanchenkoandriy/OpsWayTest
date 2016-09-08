@@ -1,6 +1,6 @@
 <?php
 
-use OpsWay\Migration\Logger\ConsoleLogger;
+use OpsWay\Migration\Logger\OutOfStockLogger;
 use OpsWay\Migration\Processor\ReadWriteProcessor;
 use OpsWay\Migration\Reader\ReaderFactory;
 use OpsWay\Migration\Writer\WriterFactory;
@@ -16,7 +16,7 @@ try {
     $processor = new ReadWriteProcessor(
         ReaderFactory::create($config['reader'], $config['params']),
         WriterFactory::create($config['writer'], $config['params']),
-        new ConsoleLogger()
+        new OutOfStockLogger(false, $config['params'])
     );
     //Processing
     $processor->processing();
