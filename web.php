@@ -11,7 +11,7 @@ try {
     $processor = new YieldProcessor(
         ReaderFactory::create($config['reader'], $config['params']),
         WriterFactory::create($config['writer'], $config['params']),
-        new ConsoleLogger(true)
+        new ConsoleLogger()
     );
     // Processing
     foreach ($processor->processing() as $item) {
