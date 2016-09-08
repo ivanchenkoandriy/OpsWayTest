@@ -1,0 +1,8 @@
+Short description
+
+Application include all php files from a config directory to configuration variable. 
+Accepts class names from GET parameters or CLI arguments. 
+Collected settings are transferred to the processor. 
+The processor is connected to the base. 
+Reads data from database and writes logs. 
+Then writes data to the file according to the settings from the configuration files.
